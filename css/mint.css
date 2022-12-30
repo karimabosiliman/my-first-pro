@@ -1,0 +1,433 @@
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+li {
+    list-style: none;
+}
+
+
+
+.container {
+
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* End Global Rules */
+/* start header */
+body {
+    font-family: "montserrat";
+    padding: 0;
+
+}
+
+header {
+    padding-bottom: 20px;
+
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    width: 182px;
+    margin-left: -13px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0
+}
+
+header a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header a:hover {
+    background-color: #ffe100;
+}
+
+header li {
+    padding-left: 20px
+}
+
+/* end header */
+/* /* start hello  */
+
+
+.hallo .text::after {
+    height: 313px;
+    content: '';
+    background-color: #ededf1;
+    position: absolute;
+    width: 368px;
+    right: 0px;
+    top: -28px;
+}
+
+.para {
+    width: 558px
+}
+
+.send {
+    background-color: #ffe100;
+    border-color: none;
+    border-width: 0px;
+    text-decoration: none;
+}
+
+/* end hello */
+/* start of work */
+.title {
+    padding-bottom: 10px;
+}
+
+.work {
+    padding-top: 20px;
+}
+
+.work .container {
+    margin: auto
+}
+
+.work .links {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.work ul {
+    list-style: none;
+    display: flex;
+    padding-left: 0
+}
+
+.work ul li:not(:first-child) {
+    padding-left: 30px;
+}
+
+.work ul li:first-child {
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+.work ul li a {
+    text-decoration: none;
+}
+
+.work ul li a:hover {
+    background-color: #ffe100;
+}
+
+.work ul li {
+    padding: 0px;
+}
+
+/* box with position */
+/* .box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+} */
+
+/* .box .yellow {
+    position: absolute;
+    background-color: #fbe831;
+    width: 280px;
+    height: 155px;
+    text-align: center;
+    padding: 27px;
+    z-index: 6;
+    left: 0;
+
+}
+
+.spad {
+    position: absolute;
+    width: 280px;
+    height: 226px;
+    background-color: #edf2f6;
+    left: 0;
+    top: 169px;
+}
+
+
+
+.spaa {
+    width: 273px;
+    height: 156px;
+    background-color: #edf2f6;
+    position: absolute;
+    right: 0;
+}
+
+.spab {
+    width: 275px;
+    height: 230px;
+    background-color: #edf2f6;
+    position: absolute;
+    right: 0;
+    bottom: -402px;
+}
+
+
+.spac {
+    width: 352px;
+    height: 224px;
+    background-color: #edf2f6;
+    position: absolute;
+    left: 309px;
+}
+
+
+.spae {
+    position: absolute;
+    left: 310px;
+    width: 351px;
+    height: 155px;
+    background-color: #edf2f6;
+    top: 242px;
+/* } */
+
+
+/* box with grid */
+.box {
+    display: grid;
+    height: 500px;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 2px;
+}
+
+.fri {
+    grid-row: span 2;
+}
+
+.for {
+    grid-row: span 2;
+
+}
+
+.thr {
+    grid-row: span 2;
+
+}
+
+.box .yallow {
+    background-color: #ffe100;
+    text-align: center;
+}
+
+.box div {
+    background-color: #ededf1;
+}
+
+.about.container {
+    position: relative
+}
+
+.show {
+    background-color: #ffe100;
+    border: none;
+    padding: 7px;
+    position: absolute;
+    left: 45%;
+    bottom: 200px
+}
+
+.boxt {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, fr);
+    background-color: white;
+    height: 300px;
+    gap: 15px
+}
+
+.one {
+    background-color: #ededf1;
+}
+
+.two {
+    background-color: #ededf1;
+}
+
+.three {
+    background-color: white;
+    border-color: #fdf8f8;
+    border: 3px;
+}
+
+/* end of work */
+/* about */
+.boxt .one .tex {
+    background-color: #ffe600;
+    width: 206px;
+    transform: translate(0, 469%);
+    padding-left: 10%;
+}
+
+.boxt .one .tex h5 {
+    transform: translate(0px, 6px);
+}
+
+
+.boxt .one .tex p {
+    color: white;
+    transform: translate(0px, -13px);
+    font-size: x-small;
+}
+
+
+.boxt .two .tex {
+    background-color: #ffe600;
+    width: 206px;
+    transform: translate(0, 469%);
+    padding-left: 10%;
+}
+
+.boxt .two .tex h5 {
+    transform: translate(0px, 6px);
+
+}
+
+.boxt .two .tex p {
+    color: white;
+    transform: translate(0px, -13px);
+    font-size: x-small;
+}
+
+.boxt .three {
+    border: 3px #ededf1;
+}
+
+
+/* start our bloge */
+
+.ourblog .super {
+    display: flex;
+    justify-content: space-between;
+}
+
+.supera,
+.superb,
+.superc {
+    width: calc(97%/3);
+}
+
+.ourblog .container .span-one {
+    height: 100%;
+    width: 100%;
+    background-color: #ffe100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ourblog .container .span-one span {
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.ourblog .container .span-two {
+    height: 100%;
+    width: 100%;
+    background-color: #fdf8f8;
+}
+
+.ourblog .container .span-three {
+    height: 100%;
+    width: 100%;
+    background-color: #fdf8f8;
+
+}
+
+/* end of about */
+/* start contact */
+.contact .container {
+    margin-top: 300px;
+}
+
+.contact li {
+    padding-bottom: 20px;
+}
+
+.contact li:not(last-child) input {
+    width: 100%
+}
+
+.contact li:last-child input[type="submit"] {
+    background-color: #ffe100;
+    border: none;
+    padding: 20px;
+    width: 50%;
+}
+
+.contact .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.contact form {
+    position: relative;
+    width: 45%;
+}
+
+.contact .flex span {
+    width: 45%;
+    height: 311px;
+    background-color: #ededf1;
+}
+
+li .massage {
+    height: 100px;
+}
+
+/* end of contact */
